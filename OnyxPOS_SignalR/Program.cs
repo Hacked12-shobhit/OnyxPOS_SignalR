@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSignalR();
 
 builder.Services.AddHostedService<OrderResourceMonitorService>();
+builder.Services.AddHostedService<TierMonitorService>();
 
 var app = builder.Build();
 
